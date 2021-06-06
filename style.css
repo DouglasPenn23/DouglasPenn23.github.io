@@ -99,17 +99,20 @@
       background:#D0E4F5 url("https://images.unsplash.com/photo-1583244685026-d8519b5e3d21?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80") no-repeat scroll 50% 75%;
     }
     
+    /* Styles the Welcome Section Paragraph */
     .welcome-section > p {
-      font-size: 3rem;
+      font-size: 3vh;
       font-weight: 200;
       font-style: italic;
       color: var(--primarycolor);
+      text-align: center;
     }
     
     /* Styles the intro class; the element containing my hello */
     .intro {
       color: white;
       font-size: 14vh;
+      text-align: center;
     }
     
     /* Styles the intro paragraph class; the element containing my job description */
@@ -163,6 +166,7 @@
       border-radius: 25px;
     }
     
+    /* Styles the Grid Cells on hover */
     .cell:hover {
       transform: scale(1.25);
     }
@@ -222,6 +226,7 @@
       margin: 0;
     }
     
+    /* Styles the project titles */
     .project-title {
       font-color: var(--fourthcolor);
       text-decoration: underline;
@@ -237,10 +242,15 @@
       padding: 15px;
       display:table;
       background-color: var(--projectsbackground);
+      text-align: center;
     }
     
-    .tools-list-header {
-    
+    .tools-header {
+    text-align: center;
+    font-size: 3vh;
+    background-color: #30363d;
+    color: white;
+    text-decoration: underline;
     }
     
     ul {
