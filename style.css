@@ -182,6 +182,7 @@
     .container-pics {
       width: 1fr;
       height: 150px;
+      padding-bottom: 1vh;
     }
     
     /* Styles the footer */
@@ -192,6 +193,12 @@
       background-color: var(--primarycolor);
       color: var(--projectsbackground);
       text-align: center;
+    }
+    
+    /* Styles the footer on hover */
+    footer:hover{
+      color: white;
+      background-color: black;
     }
     
     /* Styles the professional Picture */
@@ -228,16 +235,42 @@
     
     /* Styles the project titles */
     .project-title {
-      font-color: var(--fourthcolor);
+      color: var(--fourthcolor);
       text-decoration: underline;
       
     }
     
+    /* Styles the cell titles */
+    .cell-title{
+      text-decoration: underline;
+      padding-bottom: 1vh;
+    }
+    
+    /* Styles tool section */
     .tools-section {
       display: inline;
     }
     
-    .tools-list {
+    /* Styles the first tools list */
+    .tools-list-1 {
+      list-style-type: none;
+      padding: 15px;
+      display:table;
+      background-color: var(--projectsbackground);
+      text-align: center;
+    }
+
+    /* Styles the second tools list */
+    .tools-list-2{
+      list-style-type: none;
+      padding: 15px;
+      display:table;
+      background-color: var(--projectsbackground);
+      text-align: center;
+    }
+
+    /* Styles the third tools list */
+    .tools-list-3{
       list-style-type: none;
       padding: 15px;
       display:table;
@@ -245,12 +278,26 @@
       text-align: center;
     }
     
+    /* Styles the tools header */
     .tools-header {
     text-align: center;
-    font-size: 3vh;
+    font-size: 5vh;
     background-color: #30363d;
     color: white;
     text-decoration: underline;
+    padding-bottom: 1vh;
+    }
+
+    .tools-container{
+      border: solid 2px;
+    }
+    
+    .more-tag{
+      text-align: center;
+      background-color: #30363d;
+      color: white;
+      font-size: 4vh;
+      padding-bottom: 5vh;
     }
     
     ul {
