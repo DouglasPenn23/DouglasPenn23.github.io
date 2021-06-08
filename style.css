@@ -161,7 +161,7 @@
   /* Styles the projects section */
   .projects{
     background-color: var(--projectsbackground);
-   
+    width: 100%;
   }
   
   /* Styles the container */
@@ -379,6 +379,7 @@
 
 /* Next & previous buttons */
 .prev, .next {
+  display: flex;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -483,4 +484,15 @@
       font-size: 29vh;
     }
 
+}
+
+/* Styles the footer text */
+.footer-text{
+  color: wheat;
+  font-size: 3vh;
+  
+}
+
+.footer-elements{
+  color: wheat;
 }
