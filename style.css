@@ -4,7 +4,7 @@
   --secondarycolor: white;
   --thirdcolor: black;
   --fourthcolor: white;
-  --fifthcolor: #244f26;  
+  --fifthcolor: wheat;  
   --projectsbackground: #30363d;  
   }
   
@@ -23,15 +23,16 @@
   
   /* Adds background color to the navigation bar */
   .topnav {
-    background-color: var(--secondarycolor);
+    background-color: black;
     overflow: hidden;
     max-height: 7vh;
+   
   }
   
   /* Styles the links within the navigation bar */
   .topnav a{
     float: right;
-    color: black;
+    color: wheat;
     text-align: center;
     /* padding: 14px 16px; */
     text-decoration: none;
@@ -69,7 +70,7 @@
   /* Styles the logo */
   .logo {
     float: left;
-    color: black;
+    color: wheat;
     font-size: 25px;
     line-height: 10px;
     padding-top: 15px;
@@ -124,8 +125,8 @@
   /* Styles the about section */
   .about {
     display: flex;
-  background-color: var(--secondarycolor);
-  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  background-color: black;
+  /* background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png"); */
   font-size: 1.5rem;
   height: 25vh;
   width: 100%;
@@ -133,6 +134,11 @@
   text-align: center;
   padding: 10px;
   margin: auto;
+  }
+  /* Styles the About Me Paragraph Section */
+  .intro-text{
+    padding-top: 10vh;
+    color: wheat;
   }
   
   /* Styles the projects section */
@@ -148,7 +154,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border: solid 2px;
-    background-color: var(--projectsbackground);
+    background-color: black;
     padding-bottom: 25px;
   }
   
@@ -176,6 +182,7 @@
   .cell-text{
     font-size: 1.5rem;
     text-align: center;
+    color: wheat;
     
   }
 
@@ -198,13 +205,13 @@
     bottom: 0;
     width: 100%;
     background-color: var(--primarycolor);
-    color: var(--projectsbackground);
+    color: var(--fifthcolor);
     text-align: center;
   }
   
   /* Styles the footer on hover */
   footer:hover{
-    color: white;
+    color: wheat;
     background-color: black;
   }
   
@@ -228,11 +235,12 @@
   
   .projects {
     background-image: url("https://unsplash.com/photos/yb7Yg3Rv7WA");
+    background-color: #000000;
   }
   
   /* Styles the banner for my projects section */
   .banner {
-    background-color: var(--projectsbackground);
+    background-color: black;
     padding: 0px;
     text-align: center;
     color: white;
@@ -242,7 +250,7 @@
   
   /* Styles the project titles */
   .project-title {
-    color: var(--fourthcolor);
+    color: wheat;
     text-decoration: underline;
     
   }
@@ -250,7 +258,8 @@
   /* Styles the cell titles */
   .cell-title{
     text-decoration: underline;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
+    color: wheat;
   }
   
   /* Styles tool section */
@@ -429,12 +438,15 @@
   to {opacity: 1}
 }
 
+/* Styles the items within the tools list */
 .tools-list-item{
   background-color: #000000;
   color: white;
 }
 
+/* Styles the items in the tool list on hover */
 .tools-list-item:hover{
   background-color: white;
   color: #000000;
 }
+
