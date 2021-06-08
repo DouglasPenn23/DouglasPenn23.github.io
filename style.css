@@ -146,6 +146,8 @@
   .intro-text{
     padding-top: 10vh;
     color: wheat;
+    padding-right: 3vh;
+    padding-left: 1vh;
   }
   
   /* Styles the projects section */
