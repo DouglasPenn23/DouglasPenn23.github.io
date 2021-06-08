@@ -142,7 +142,7 @@
   
   /* Styles the container */
   .container {
-    height: 90vh;
+    height: 200vh;
     margin: 0rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -183,6 +183,7 @@
     padding-bottom: 50vh;
   }
    */
+
   /* Styles the images within the container */
   .container-pics {
     width: 1fr;
@@ -255,6 +256,8 @@
   /* Styles tool section */
   .tools-section {
     display: inline;
+    
+    /* background-color: black; */
   }
   
   /* Styles the first tools list */
@@ -262,7 +265,8 @@
     list-style-type: none;
     padding: 15px;
     display:table;
-    background-color: var(--projectsbackground);
+    border: solid 8px wheat;
+    background-color: black;
     text-align: center;
   }
 
@@ -271,7 +275,8 @@
     list-style-type: none;
     padding: 15px;
     display:table;
-    background-color: var(--projectsbackground);
+    border: solid 8px wheat;
+    background-color: black;
     text-align: center;
   }
 
@@ -280,8 +285,9 @@
     list-style-type: none;
     padding: 15px;
     display:table;
-    background-color: var(--projectsbackground);
+    background-color: black;
     text-align: center;
+    border: solid 8px wheat;
   }
   
   /* Styles the tools header */
@@ -289,7 +295,7 @@
   text-align: center;
   font-size: 5vh;
   background-color: black;
-  color: white;
+  color: wheat;
   text-decoration: underline;
   padding-bottom: 1vh;
   }
@@ -302,12 +308,13 @@
     padding-top: 20px;
     text-align: center;
     background-color: black;
-    color: white;
+    color: wheat;
     font-size: 4vh;
     padding-bottom: 5vh;
     text-decoration: underline;
   }
   
+  /* Styles unordered list items */
   ul {
       padding: 0;
       width:100%;
@@ -315,12 +322,15 @@
       -moz-box-sizing:border-box;
       -webkit-box-sizing:border-box;
   }
+
+  /* Styles List elements */
   li {
       display:table-cell;
       color: white;
       padding: 15px;
   }
   
+  /* Styles the Nav Bar List Items */
   .navbarlist{
     float: right;
   }
@@ -417,4 +427,14 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.tools-list-item{
+  background-color: #000000;
+  color: white;
+}
+
+.tools-list-item:hover{
+  background-color: white;
+  color: #000000;
 }
