@@ -24,6 +24,7 @@
           outline: 0;
           font-size: 100%;
           vertical-align: baseline;
+          background-color: black;
    }
 
   
@@ -31,7 +32,7 @@
   .topnav {
     width: 100%;
     background-color: black;
-    /* overflow: hidden; */
+    overflow: visible;
     max-height: 7vh;
    
   }
@@ -46,6 +47,7 @@
     font-size: 17px;
     margin-right: 3vh;
     margin: 0;
+    
   }
   /* Styles the logo image */
   .logo-image{
@@ -60,7 +62,7 @@
     list-style-type: none;
     margin: 0;
     max-width: 100%;
-    
+    background-color: black;
   }
   
   /* Changes the colors of links on hover */
@@ -71,7 +73,7 @@
   
   /* Add a color the the active/current link */
   .topnav a.active {
-    background-color: var(--secondarycolor);
+    background-color: black;
   }
   
   /* Styles the logo */
@@ -85,12 +87,14 @@
     margin: 0px;
     text-align: center;
     margin-left: 2vh;
+    
   }
   
   /* Styles the Navigation Bar */
   
   nav {
     height: .5vh;
+    background-color: black;
   }
   
   /* Styles the welcome secton */
@@ -121,12 +125,14 @@
     color: white;
     font-size: 10vh;
     text-align: center;
+    background: transparent;
   }
   
   /* Styles the intro paragraph class; the element containing my job description */
   #intro2 {
     color: var(--fourthcolor);
     font-size: 7vh;
+    background: transparent;
   }
   
   /* Styles the about section */
