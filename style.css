@@ -162,6 +162,8 @@
   .projects{
     background-color: var(--projectsbackground);
     width: 100%;
+    padding-bottom: 20vh;
+  
   }
   
   /* Styles the container */
@@ -174,6 +176,7 @@
     border: solid 2px;
     background-color: black;
     padding-bottom: 25px;
+    width: 100%;
   }
   
   /* Styles the cells where the projects are held */
@@ -182,7 +185,7 @@
     color: var(--fourthcolor);
     font-size: 3rem;
     text-align: center;
-    padding: 4rem;
+    padding: 3rem;
     padding-bottom: 15vh;
     margin: 10px;
     border: solid 2px;
