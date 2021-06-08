@@ -14,6 +14,7 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    overflow: auto;
   }
   
   /* Basic CSS */ 
@@ -123,9 +124,10 @@
   /* Styles the intro class; the element containing my hello */
   .intro {
     color: white;
-    font-size: 10vh;
+    font-size: 9vh;
     text-align: center;
     background: transparent;
+    width: 100%;
   }
   
   /* Styles the intro paragraph class; the element containing my job description */
@@ -159,6 +161,7 @@
   /* Styles the projects section */
   .projects{
     background-color: var(--projectsbackground);
+   
   }
   
   /* Styles the container */
@@ -470,3 +473,14 @@
   color: #000000;
 }
 
+/* For IPhone X */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .intro{
+      font-size: 29vh;
+    }
+
+}
