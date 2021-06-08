@@ -8,7 +8,13 @@
   --projectsbackground: #30363d;  
   }
   
-  
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
   
   /* Basic CSS */ 
   * {
@@ -23,6 +29,7 @@
   
   /* Adds background color to the navigation bar */
   .topnav {
+    width: 100%;
     background-color: black;
     overflow: hidden;
     max-height: 7vh;
