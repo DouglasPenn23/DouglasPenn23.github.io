@@ -159,6 +159,7 @@
     font-size: 3rem;
     text-align: center;
     padding: 4rem;
+    padding-bottom: 15vh;
     margin: 10px;
     border: solid 2px;
     background-color: #010409;
@@ -177,7 +178,11 @@
     text-align: center;
     
   }
-  
+
+  /* .cell-6{
+    padding-bottom: 50vh;
+  }
+   */
   /* Styles the images within the container */
   .container-pics {
     width: 1fr;
@@ -283,7 +288,7 @@
   .tools-header {
   text-align: center;
   font-size: 5vh;
-  background-color: #30363d;
+  background-color: black;
   color: white;
   text-decoration: underline;
   padding-bottom: 1vh;
@@ -294,8 +299,9 @@
   }
   
   .more-tag{
+    padding-top: 20px;
     text-align: center;
-    background-color: #30363d;
+    background-color: black;
     color: white;
     font-size: 4vh;
     padding-bottom: 5vh;
