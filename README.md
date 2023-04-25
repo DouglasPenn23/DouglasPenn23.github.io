@@ -1,2 +1,2 @@
 # DouglasPenn23.github.io
-Repository for Github IO Portfolio
+Repository for my Github Portfolio
