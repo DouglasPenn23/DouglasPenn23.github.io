@@ -201,7 +201,7 @@ li a:hover:not(.active) {
   color: white;
   text-decoration: underline;
   margin-bottom: 50px;
-  font-size: 35px;
+  font-size: 6vh;
 }
 
 /* Styles the container holding my projects */
@@ -468,6 +468,7 @@ footer{
 .project-description-text{
   color: white;
   text-align: center;
+  font-size: 2.5vh;
 }
 
 /* Styles the slideshow-title-text */
