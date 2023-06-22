@@ -100,7 +100,7 @@ li a:hover:not(.active) {
 }
 
 /* Styles the main name header */
-.name-header{
+.name-header {
   color: black;
   position: relative;
   background: transparent;
@@ -115,55 +115,55 @@ li a:hover:not(.active) {
 /* Start of about me CSS */
 
 /* Styles the introduction div */
-.introduction-div{
+.introduction-div {
   color: white;
-  }
+}
   
-  /* Styles the introductory banner */
-  .introduction-banner{
-    background-color: orange;
-   text-align: center;
-   margin-top: 0;
-  }
+/* Styles the introductory banner */
+.introduction-banner {
+  background-color: orange;
+  text-align: center;
+  margin-top: 0;
+}
   
-  /* Styles the about me section header */
-  .about-me-h2{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    text-decoration: underline;
-  }
+/* Styles the about me section header */
+.about-me-h2 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
   
-  /* Styles the paragraph class within the about me section */
-  .about-me-text{
+/* Styles the paragraph class within the about me section */
+.about-me-text {
     padding-left: 300px;
     color: white;
-  }
+}
   
-  /* Styles the about me image */
-  .about-me-image{
+/* Styles the about me image */
+  .about-me-image {
     float: left;
     max-height: 700px;
-  }
+}
   
-  /* Styles the about me link to my resume */
-  .resume-link{
-    text-align: center;
-    color: white;
-  }
-  /* Ends the Styling of the About Me Page */
+/* Styles the about me link to my resume */
+.resume-link {
+  text-align: center;
+  color: white;
+}
+/* Ends the Styling of the About Me Page */
 
-  /* Starts the styling of the Contact me Page */
+/* Starts the styling of the Contact me Page */
 
-  /* Styles the header for the Contacts section  */
-.contact-header{
+/* Styles the header for the Contacts section  */
+.contact-header {
   color: white;
   text-align: center;
   list-style-type: none;
   text-decoration: underline;
 }
 
-.contact-list{
+.contact-list {
   color: white;
 }
 
@@ -176,19 +176,19 @@ li a:hover:not(.active) {
 }
 
 /* Styles the contact me paragraph */
-.contact-paragraph{
+.contact-paragraph {
   color: white;
   padding: 30px;
   font-size: 20px;
 }
 
 /* Styles the anchor elements within the contact options section */
-.contact-anchor{
+.contact-anchor {
   text-decoration: none;
   color: white;
 }
 
-.image-container{
+.image-container {
   float: right;
 }
 /* Ends Styling of the Contact Me Page */
@@ -196,7 +196,7 @@ li a:hover:not(.active) {
 /* Starts the styling of the work page */
 
 /* Styles the header elements associated w/ projects */
-.project-header{
+.project-header {
   text-align: center;
   color: white;
   text-decoration: underline;
@@ -205,30 +205,32 @@ li a:hover:not(.active) {
 }
 
 /* Styles the container holding my projects */
- .projects-container{
+ .projects-container {
   display: grid; 
   grid-template-columns: repeat(3, [col] 1fr);
   grid-template-rows: repeat(3, [row] 1fr); 
   column-gap: 10px;
-   row-gap: 10px;
-   margin-left: 30px;
-   margin-right: 30px;
+  row-gap: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /* Styles the  div within the projects-container*/
-.projects-container div{
-  background-image: url(https://i.redd.it/9tknmytn57z11.jpg);
+.projects-container div {
+  /* background-image: url(https://i.redd.it/9tknmytn57z11.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-
+.project-tile {
+  outline: 2px solid white;
+}
 
 
 /* Styles the images contained in the project section */
-.image{
+.image {
   max-height: 35vh;
   max-width: 35vh;
   display: block;
@@ -239,15 +241,15 @@ li a:hover:not(.active) {
 }
 
 /* Styles the individual project titles */
-.project-title{
+.project-title {
   color: white;
   text-align: center;
   background: transparent;
 }
 
 /* Styles the paragraph element within our project divs */
-.project-text{
-  font-size: 2vh;
+.project-text {
+  font-size: 3vh;
   color: white;
   color: #fff;
   text-shadow: 4px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -259,7 +261,8 @@ li a:hover:not(.active) {
 }
 
 /* Styles the paragraph section talking about technology used */
-.tech-used{
+.tech-used {
+  font-size: 3vh;
   color: #fff;
   text-shadow: 4px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   display: block;
@@ -271,20 +274,20 @@ li a:hover:not(.active) {
 }
 
 /* Styles the anchor tag for projects */
-.project-link{
+.project-link {
   text-decoration: none;
   background: transparent;
 }
 
 /* Creates the zoom effect for our projects */
-.zoom:hover {
+/* .zoom:hover { */
   /* -ms-transform: scale(1.2); /* IE 9 */
   /* -webkit-transform: scale(1.2); Safari 3-8 */
   /* transform: scale(1.2);  */
   /* background-image: url(https://kidsdiscover.blob.core.windows.net/kdoassets/uploads/units/thumbnails/treasure_largethumb.jpg); */
   /* background: black;
   overflow: none; */
-}
+/* } */
 
 /* Styles the Footer */
 footer{
@@ -329,6 +332,7 @@ footer{
   color: white;
   margin-top: 500px;
 }
+
 /* Styles the elements within the footer */
 .footer-element{
   padding: 10px;
