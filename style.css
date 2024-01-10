@@ -1,6 +1,6 @@
 /* Controls Default Styling of the webpage */
 *{
-  background-color: gray;
+  background-color: black;
   box-sizing: border-box;
 }
 
@@ -241,7 +241,7 @@ li a:hover:not(.active) {
   outline: 2px solid white;
   box-shadow: 12px 12px 2px 1px white;
   min-width: 8vh;
-  max-height: 50vh;
+  max-height: 75vh;
   overflow-y: auto;
 }
 
