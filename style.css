@@ -1,6 +1,6 @@
 /* Controls Default Styling of the webpage */
 *{
-  background-color: black;
+  background-color: gray;
   box-sizing: border-box;
 }
 
@@ -17,7 +17,6 @@ margin: 0px;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
   position: sticky;
   top: 0;
   width: 100%;
@@ -27,7 +26,7 @@ margin: 0px;
 /* Controls the list elements themselves within the navigation bar */
 .nav-list {
   float: left;
-  background-color: gray;
+  
 }
 
 
@@ -38,6 +37,7 @@ margin: 0px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: black;
   /* border-right: 1px solid #bbb; */
   /* border-bottom: 1px solid #bbb; */
 }
