@@ -8,25 +8,15 @@
 
 </head>
 
-<!-- Creates the Navigation Bar -->
-<nav>
-    <ul class="unordered-nav-list">
-      
-    <li class="nav-list"><a href="index.html">Home</a></li>
-      
-    <li class="nav-list"><a href="work.html">Work</a></li>
-      
-    <!-- <li class="nav-list"><a href="contact_me.html">Contact</a></li> -->
-    
-      
-    <li class="nav-list"><a href="about_me.html">About</a></li>
-
-    <li class="nav-list"><a href="https://wecancodeit.org/douglas-pennington-story/">My Story</a></li>
-
-  <!--  Area where my name/logo is held    -->
-      <li class="name">Douglas Pennington</li>
-    </ul>
-  </nav>
+<!-- This is where we grab the navbar file with a script -->
+<div id="navbar-container"></div>
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+      });
+</script>
 
   <body>
     <!-- Starts the header for my projects section -->
