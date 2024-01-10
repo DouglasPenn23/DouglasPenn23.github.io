@@ -319,6 +319,20 @@ footer{
   margin-top: 28vh;
 }
 
+
+/* These 3 are all necessary for the color 
+formatting of the footer. \0/ */
+.footer-list{
+  background-color: black;
+}
+.footer-element{
+  background-color: black;
+}
+.footer-link{
+  background-color: black;
+}
+/* End of color Formatting Necessities  */
+
 /* Styles the Footer for the Work page */
 .work-footer{
   padding-top: 10px;
