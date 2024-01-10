@@ -6,13 +6,7 @@
 
 <!-- This is where we grab the navbar file with a script -->
 <div id="navbar-container"></div>
-<script>
-  fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('navbar-container').innerHTML = data;
-      });
-</script>
+
   
   <!-- Creates the head (To Allow for live Reload)  -->
 <head>
@@ -62,24 +56,34 @@
   <div class="project-descriptions">
     <p class="project-description-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ornare nisi, ac finibus orci. Maecenas imperdiet sollicitudin metus ut porttitor. Maecenas a tempus tellus, in dapibus dui. Morbi tempus, justo quis vestibulum facilisis, mi ligula mattis magna, id efficitur quam tortor ut nulla. Vivamus in pulvinar enim. Fusce laoreet sodales neque hendrerit faucibus. Maecenas vulputate justo sed laoreet elementum. Nam tempus bibendum tincidunt. Sed egestas id neque at tincidunt. Quisque dolor justo, interdum sit amet est porttitor, blandit gravida lectus. </p>
   </div>
-  </body>
+
+<!--  -->
+<div id="footerPlaceholder"></div>
+
+<!-- End of Body -->
+</body>
   
-  <footer class="ind_work_footer">
-    <ul class="footer-list">
-  <!--  Styles the Github part of footer  -->
-      <li class="footer-element"><a class="footer-link" href="https://github.com/DouglasPenn23"> Github </li></a>
-    <div class="vl">
-    </div>
-    
-  <!--  Styles the Linked in part of footer  -->
-    <li class="footer-element"><a class="footer-link" href="https://www.linkedin.com/in/douglas-pennington-114bb5182/">
-      LinkedIn </li></a>
-  <div class="vl">
-    </div>
-    
-    
-  <li class="footer-element"><a class="footer-link" href="mailto:DouglasPennington2013@gmail.com">Gmail </li></a>
-    </ul>
-  </footer>
-  
-  <script src="app.js"></script>
+
+
+<!-- Load JS Scripts -->
+<script src="app.js"></script>
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+      });
+  document.addEventListener('DOMContentLoaded', function () {
+      loadFooter();
+  });
+
+  function loadFooter() {
+      // Fetch the content of footer.html
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            // Inject the content into the placeholder
+            document.getElementById('footerPlaceholder').innerHTML = data;
+        });
+  }
+</script>

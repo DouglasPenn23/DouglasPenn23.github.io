@@ -7,18 +7,12 @@
 <head>
 
 </head>
-<!-- This is where we grab the navbar file with a script -->
-<div id="navbar-container"></div>
-<script>
-  fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('navbar-container').innerHTML = data;
-      });
-</script>
-
 
 <body>
+
+<!-- This is where we grab the navbar file with a script -->
+<div id="navbar-container"></div>
+
 <!-- Starts the contact section -->
 <h1 class="contact-header"> Let's Build Something Great! </h1>
 
@@ -38,21 +32,32 @@
 <div class="image-container">
   <img src="https://th.bing.com/th/id/R.5e03bb7b2399131233aabfcc470c2e85?rik=xOFuTVKmiOiHEg&riu=http%3a%2f%2fwww.ancient-origins.net%2fsites%2fdefault%2ffiles%2ffield%2fimage%2fconstruction-of-the-Egyptian-pyramids.jpg&ehk=T3e%2fjMsHpLZOYyOYv8MuTV6GuuXyK8pH%2fcxPPQppksU%3d&risl=&pid=ImgRaw&r=0">
 </div>
+
+<!-- Footer Div to be targeted with JS -->
+<div id="footerPlaceholder"></div>
+
+<!-- Close the Body -->
 </body>
-<footer class="contact-footer">
-  <ul class="footer-list">
-<!--  Styles the Github part of footer  -->
-    <li class="footer-element"><a class="footer-link" href="https://github.com/DouglasPenn23"> Github </li></a>
-  <div class="vl">
-  </div>
-  
-<!--  Styles the Linked in part of footer  -->
-  <li class="footer-element"><a class="footer-link" href="https://www.linkedin.com/in/douglas-pennington-114bb5182/">
-    LinkedIn </li></a>
-<div class="vl">
-  </div>
-  
-  
-<li class="footer-element"><a class="footer-link" href="mailto:DouglasPennington2013@gmail.com">Gmail </li></a>
-  </ul>
-</footer>
+
+
+<!-- Load Scripts for JS DOM Manipulation -->
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+      });
+  document.addEventListener('DOMContentLoaded', function () {
+     loadFooter();
+  });
+
+  function loadFooter() {
+     // Fetch the content of footer.html
+     fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+           // Inject the content into the placeholder
+           document.getElementById('footerPlaceholder').innerHTML = data;
+        });
+  }
+</script>

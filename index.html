@@ -22,17 +22,15 @@
 </head>
 
 
-<!-- This is where we grab the navbar file with a script -->
-<div id="navbar-container"></div>
-<script>
-  fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('navbar-container').innerHTML = data;
-      });
-</script>
+
+
 
 <body>
+  
+<!-- This is where we grab the navbar file with a script -->
+<div id="navbar-container"></div>
+
+
 <!-- Starts the main div -->
 <div class="main-div">
   <!-- <h2 class="name-header"> Douglas Pennington </h2> -->
@@ -79,30 +77,38 @@
   
   <!-- <h3 class="toolbox-closer"> & More! </h3> -->
 
+<div id="footerPlaceholder"></div>
+
+<!-- Close the body -->
 </body>
 
 
-<footer>
-  <ul class="footer-list">
-<!--  Styles the Github part of footer  -->
-    <li class="footer-element"><a class="footer-link" href="https://github.com/DouglasPenn23"> Github </li></a>
-  <div class="vl">
-  </div>
-  
-<!--  Styles the Linked in part of footer  -->
-  <li class="footer-element"><a class="footer-link" href="https://www.linkedin.com/in/douglas-pennington-114bb5182/">
-    LinkedIn </li></a>
-<div class="vl">
-  </div>
-  
-  
-<li class="footer-element"><a class="footer-link" href="mailto:DouglasPennington2013@gmail.com">Gmail </li></a>
-  </ul>
-</footer>
 
+
+
+<!-- Dom Relevant JS Scripts -->
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+      });
+  document.addEventListener('DOMContentLoaded', function () {
+     loadFooter();
+  });
+
+  function loadFooter() {
+     // Fetch the content of footer.html
+     fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+           // Inject the content into the placeholder
+           document.getElementById('footerPlaceholder').innerHTML = data;
+        });
+  }
+</script>
 
 <!-- Imports Font Awesome Icon & JS Script -->
-  <!-- Imports Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/8f90320c69.js" crossorigin="anonymous">
-  </script>
-  <script src="app.js"></script>
+<!-- Imports Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/8f90320c69.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>

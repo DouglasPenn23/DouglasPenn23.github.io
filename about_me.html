@@ -8,15 +8,14 @@
 
 </head>
 
+<!-- Begin the Body here -->
+<body>
+
 <!-- This is where we grab the navbar file with a script -->
 <div id="navbar-container"></div>
-<script>
-  fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('navbar-container').innerHTML = data;
-      });
-</script>
+<!-- End of Navbar Area -->
+
+
 
   <div class="about-me-section">
      <h2 class="about-me-h2"> About me <h2>
@@ -31,32 +30,44 @@
 
             In my free time, I like to compete in Esports & I currently run a club with over 30 members where we work together to achieve our goals. I also enjoy hiking, kayaking, studying history, 
             learning philosophy & more! Let’s get to know each other & create something awesome!
-
           </p>
          
          <!-- <div class="resume-link"> -->
          <!-- <a href="https://drive.google.com/file/d/12TdP-ir-q4fuYar6_oDo6OqkzYB3biBT/view?usp=sharing"> My resume</a> -->
          <!-- </div> -->
-       </div>
-       </div>
-      </div>
 
-       <footer class="about-footer">
-        <ul class="footer-list">
-      <!--  Styles the Github part of footer  -->
-          <li class="footer-element"><a class="footer-link" href="https://github.com/DouglasPenn23"> Github </li></a>
-        <div class="vl">
-        </div>
-        
-      <!--  Styles the Linked in part of footer  -->
-        <li class="footer-element"><a class="footer-link" href="https://www.linkedin.com/in/douglas-pennington-114bb5182/">
-          LinkedIn </li></a>
-      <div class="vl">
-        </div>
-        
-        
-      <li class="footer-element"><a class="footer-link" href="mailto:DouglasPennington2013@gmail.com">Gmail </li></a>
-        </ul>
-      </footer>
+       <!-- Closing Div for "about-me-text" -->
+       </div>
+<!-- Closing Div for about-me-section -->
+</div>
+      
+      <div id="footerPlaceholder"></div>
+
+<!-- End of Body -->
+</body>
+
+
+<!-- Load Scripts for JS Dom Elements -->
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+      });
+  document.addEventListener('DOMContentLoaded', function () {
+      loadFooter();
+  });
+
+  function loadFooter() {
+      // Fetch the content of footer.html
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            // Inject the content into the placeholder
+            document.getElementById('footerPlaceholder').innerHTML = data;
+        });
+  }
+</script>
+<!-- End of JS DOM Scripting -->
       
        
