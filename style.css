@@ -94,7 +94,6 @@ li a:hover:not(.active) {
   display: flex;
   justify-content: center;
   padding-top: 5vh;
-
   font-size: 6vh;
   -webkit-text-stroke: 2px white;
   margin-bottom: 20px; 
@@ -113,46 +112,34 @@ li a:hover:not(.active) {
 
 /* End of Home Page CSS */
 
+
 /* Start of about me CSS */
 
-/* Styles the introduction div */
-.introduction-div {
-  color: white;
-}
-  
-/* Styles the introductory banner */
-.introduction-banner {
-  background-color: orange;
-  text-align: center;
-  margin-top: 0;
-}
-  
-/* Styles the about me section header */
-.about-me-h2 {
-  color: white;
-  text-align: center;
-  font-size: 50px;
-  text-decoration: underline;
-}
-  
 /* Styles the paragraph class within the about me section */
 .about-me-text {
-    padding-left: 300px;
-    color: white;
+  color: white;
+  /* border: 2px solid white; */
+  float: center;
+  /* text-align: center; */
+  
 }
   
 /* Styles the about me image */
-  .about-me-image {
-    float: left;
-    max-height: 700px;
+.about-me-image {
+  float: left;
+  margin: 5px;
+  max-height: 250px;
+  border-radius: 50%;
 }
   
-/* Styles the about me link to my resume */
-.resume-link {
-  text-align: center;
-  color: white;
-}
+
+
+
+
+
+
 /* Ends the Styling of the About Me Page */
+
 
 /* Starts the styling of the Contact me Page */
 
@@ -194,6 +181,7 @@ li a:hover:not(.active) {
 }
 /* Ends Styling of the Contact Me Page */
 
+
 /* Starts the styling of the work page */
 
 /* Styles the header elements associated w/ projects */
@@ -217,6 +205,7 @@ li a:hover:not(.active) {
   margin-right: 30px;
 } */
 /* Styles the container holding my projects */
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, [col] 1fr);
@@ -308,6 +297,7 @@ li a:hover:not(.active) {
   overflow: none; */
 /* } */
 
+
 /* Styles the Footer */
 footer{
   padding-top: 10px;
@@ -352,7 +342,7 @@ formatting of the footer. \0/ */
   justify-content: center;
   background-color: black;
   color: white;
-  margin-top: 650px;
+  margin-top: 65vh;
 }
 
 
@@ -363,7 +353,7 @@ formatting of the footer. \0/ */
   justify-content: center;
   background-color: black;
   color: white;
-  margin-top: 500px;
+  margin-top: 55vh;
 }
 
 /* Styles the elements within the footer */
@@ -383,6 +373,9 @@ formatting of the footer. \0/ */
   text-decoration: none;
   color: white;
 }
+
+/* End of footer Styling */
+
 
 /* Starts the styling the Individual Projects Page */
 
