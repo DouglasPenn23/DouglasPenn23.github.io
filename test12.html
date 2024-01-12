@@ -1,0 +1,54 @@
+<!-- Creates the head (To Allow for live Reload)  -->
+<!-- Contains Stylesheet Data -->
+<head>
+    <!-- Imports the StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f90320c69.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website for Github">
+    <meta name="keywords" content="Douglas Pennington, Doug Pennington, Douglas, Douglas Pennington Github, Coding, Software Developer">
+    <meta name="author" content="Douglas Pennington">
+</head>
+
+<!-- Begins the Body -->
+<body>
+
+<!-- Starts header which contains Intro or Nav aids -->
+<header>
+    <!-- This is where we grab the navbar file with a script -->
+    <div id="navbar-container"></div>
+</header>
+
+<div class="footer-wrapper">
+    <div id="footerPlaceholder"></div>
+</div>
+
+<!-- Close the body -->
+</body>
+
+
+
+
+
+<!-- Dom Relevant JS Scripts -->
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+      });
+  document.addEventListener('DOMContentLoaded', function () {
+     loadFooter();
+  });
+
+  function loadFooter() {
+     // Fetch the content of footer.html
+     fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+           // Inject the content into the placeholder
+           document.getElementById('footerPlaceholder').innerHTML = data;
+        });
+  }
+</script>

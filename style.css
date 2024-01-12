@@ -346,7 +346,7 @@ formatting of the footer. \0/ */
 }
 
 
-.about-footer{
+.footer-wrapper{
   padding-top: 10px;
   display: flex;
   flex-direction: row;
