@@ -561,3 +561,9 @@ footer{
   border-left: 6px solid white;
   height: 5vh;
 }
+
+
+/* Begins the styling of the CSS Slider */
+.color-slider{
+  float: right;
+}
